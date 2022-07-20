@@ -8,23 +8,37 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.microverse-logo img {
+  margin-top: 30px;
+  margin-left: 150px;
+  height: 60px;
+}
+
 h1 {
   font-size: 2.5rem;
-  margin-left: 30px;
-  margin-top: 90px;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+  margin-left: 315px;
 }
 
 h2 {
   font-size: 2rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
 }
 
 .main-container {
   margin: 2rem;
+  outline: 1px solid black;
+  padding: 1px 1px;
+  background-color: #6823cc;
 }
 
 .container {
   display: flex;
   margin: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .scores-title {

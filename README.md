@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard
+# Microverse Students Leaderboard
 
-Leaderboard project that displays scores submitted by different players. 
+Microverse Students Leaderboard project that displays scores submitted by different students. 
 All data is preserved in the [Leaderboard](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) external API.
 
 ## Built With
