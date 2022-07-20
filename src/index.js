@@ -1,54 +1,16 @@
-import addLi from '../modules/add-li.js';
 import './style.css';
+import refreshScores from './modules/refresh-list.js';
+import { submitScore } from './modules/submit.js';
 
-// object data
-const leaderboardData = {
-  result: [
-    {
-      user: 'User 1',
-      score: 10,
-    },
-    {
-      user: 'User 2',
-      score: 20,
-    },
-    {
-      user: 'User 3',
-      score: 30,
-    },
-    {
-      user: 'User 4',
-      score: 40,
-    },
-    {
-      user: 'User 5',
-      score: 50,
-    },
-    {
-      user: 'User 6',
-      score: 60,
-    },
-    {
-      user: 'User 7',
-      score: 70,
-    },
-    {
-      user: 'User 8',
-      score: 80,
-    },
-    {
-      user: 'User 9',
-      score: 90,
-    },
-    {
-      user: 'User 10',
-      score: 100,
-    },
-  ],
-};
+// createGame(api)
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+// Use to generate a new gameId
+const gameId = 'tlZsK7h56smjqt6QZqiK';
+const refreshBtn = document.getElementById('refresh');
 
-// print the data into the html
-leaderboardData.result.forEach((element) => {
-  const text = `${element.user}: ${element.score}`;
-  addLi(text);
+refreshScores(api, gameId);
+submitScore(api, gameId);
+
+refreshBtn.addEventListener('click', () => {
+  refreshScores(api, gameId);
 });

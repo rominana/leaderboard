@@ -2,31 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leaderboard Project</title>
 </head>
 
 <body>
-  <h1>Leaderboard</h1>
-  <div class="container">
-    <section id="recent">
-      <div class="head">
-        <h2>Recent Scores</h2>
-        <button type="button" id="refresh">Refresh</button>
+  <section>
+    <div class="main-container">
+      <h1>Leaderboard</h1>
+      <div id="game-name"></div>
+      <div class="container">
+        <div class="scores">
+          <div class="scores-title">
+            <h2>Recent scores</h2>
+            <button class="refresh-btn" id="refresh" type="button">Refresh</button>
+          </div>
+          <ul class="scores-list" id="scores">
+            <!-- Scores generated with Javascript -->
+          </ul>
+        </div>
+        <div class="add-score">
+          <div class="add-score-title">
+            <h2>Add your score</h2>
+          </div>
+          <form class="form">
+            <input class="input" type="text" name="user" id="user" placeholder="Name" />
+            <input class="input" type="text" name="score" id="score" placeholder="Score" />
+            <button class="submit-btn" id="submit" type="button">Submit</button>
+            <div id="message"></div>
+          </form>
+        </div>
       </div>
-      <ul id="leaderboard">
-        <!-- Section generated using javascript-->
-      </ul>
-    </section>
-    <section id="add-section">
-      <h2>Add your score</h2>
-      <input type="text" name="name" id="name" placeholder="Your name">
-      <input type="text" name="score" id="score" placeholder="Your score">
-      <button id="submit-score" type="button">Submit</button>
-    </section>
-  </div>
+    </div>
+  </section>
 </body>
 
 </html>
