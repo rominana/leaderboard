@@ -2,7 +2,8 @@
 
 # Leaderboard
 
-Setup for a leaderboard that displays scores submitted by different players. Allows submission of your own score. 
+Leaderboard project that displays scores submitted by different players. 
+All data is preserved in the [Leaderboard](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) external API.
 
 ## Built With
 
@@ -10,6 +11,7 @@ Setup for a leaderboard that displays scores submitted by different players. All
 - CSS
 - Javascript
 - Webpack
+- Leaderboard API 
 
 ## Live Demo (if available)
 
@@ -23,7 +25,7 @@ To edit this project:
 - Run with npm run start.
 ## Authors
 
-👤 **Author1**
+👤 **Romina Patiño**
 
 - GitHub: [@rominana](https://github.com/rominana)
 - Twitter: [@romina_pati](https://twitter.com/romina_pati)
